@@ -1,0 +1,97 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" :"M jhon",
+    "email" :"user@gmail.com",
+    "password" :"user123",
+    "confPassword" :"user123",
+    "role" :"user"
+}
+
+###
+/ get All Users
+
+GET http://localhost:5000/users
+
+### 
+//get single users
+
+GET  http://localhost:5000/users/71c8c968-ac98-4483-8ce8-3b9b4999c602
+
+###
+//update User
+PATCH  http://localhost:5000/users/946bc17c-f238-471b-9be8-12103b33f8c0
+Content-Type: application/json
+
+{
+    "name" :"M Bintang updated",
+    "email" :"bintang@gmail.com",
+    "password" :"bintang12",
+    "confPassword" :"bintang12",
+    "role" :"user"
+}
+###
+//delete user
+DELETE http://localhost:5000/users/946bc17c-f238-471b-9be8-12103b33f8c0
+
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    
+    "email" :"admin@gmail.com",
+    "password" :"admin123"
+   
+}
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    
+    "email" :"user@gmail.com",
+    "password" :"user123"
+   
+}
+###
+DELETE http://localhost:5000/logout
+
+###
+GET http://localhost:5000/me
+
+###
+//get all products
+GET http://localhost:5000/products
+
+
+###
+// get single product
+//get all products
+GET http://localhost:5000/products/05365f21-0c5f-4c9d-b8ad-bb3f3199e498
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    
+    "name" :"product 5",
+    "price" :991
+   
+}
+
+###
+PATCH  http://localhost:5000/products/05365f21-0c5f-4c9d-b8ad-bb3f3199e498
+Content-Type: application/json
+
+{
+    
+    "name" :"product update",
+    "price" :976
+   
+}
+###
+DELETE http://localhost:5000/products/05365f21-0c5f-4c9d-b8ad-bb3f3199e498
