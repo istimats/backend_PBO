@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('bhdhbg68l41r537hvbkg', 'um32ou1xblawcsit', 'rM77Xalb7t0M80TFfvSK',{
-    host: 'bhdhbg68l41r537hvbkg-mysql.services.clever-cloud.com',
+const db = new Sequelize('kors2841_apirest', 'kors2841_bambang', '5Q_?}sKTo_R@',{
+    host: 'https://api.korslet.me',
     dialect: 'mysql'
 })
 
