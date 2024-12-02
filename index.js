@@ -33,7 +33,7 @@ app.use(session({
 app.use(cors(
     {
         credentials: true,
-        origin: "http://localhost:3000"
+        origin: "https://frontend-pemweb.vercel.app/"
     }
 ));
 app.use(express.json());
